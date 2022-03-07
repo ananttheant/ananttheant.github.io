@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bfc0538e.css",
+    "main.js": "/static/js/main.ff23f1bb.js",
+    "static/js/787.d1d4a2c2.chunk.js": "/static/js/787.d1d4a2c2.chunk.js",
+    "static/media/rspslots.png": "/static/media/rspslots.015531835afd32fbd525.png",
+    "static/media/bigbee2.png": "/static/media/bigbee2.7fc2eb2ebd9ac832258a.png",
+    "static/media/book.gif": "/static/media/book.1ef1fdcc3f1c4354c620.gif",
+    "static/media/bigbee1.png": "/static/media/bigbee1.dfdfe112fe558a950d09.png",
+    "static/media/hm.png": "/static/media/hm.dda9b9090d78770d9a10.png",
+    "static/media/ant.png": "/static/media/ant.b4de2fd1e35864d2bc41.png",
+    "static/media/slots.jpg": "/static/media/slots.cac9440df91ef93c443c.jpg",
+    "static/media/rsfun.webp": "/static/media/rsfun.692a068958c4136d82bb.webp",
+    "static/media/tiktik.jpg": "/static/media/tiktik.327974bbdc58cff0a8b6.jpg",
+    "static/media/icon-potion.gif": "/static/media/icon-potion.f2b9748bd1e58a54924b.gif",
+    "index.html": "/index.html",
+    "main.bfc0538e.css.map": "/static/css/main.bfc0538e.css.map",
+    "main.ff23f1bb.js.map": "/static/js/main.ff23f1bb.js.map",
+    "787.d1d4a2c2.chunk.js.map": "/static/js/787.d1d4a2c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfc0538e.css",
+    "static/js/main.ff23f1bb.js"
+  ]
+}
