@@ -11,8 +11,8 @@ const About = () => (
         talented professional to help to develop their projects. I graduated
         from Birmingham City University, with First-class Honours in BSc.
         Interactive Entertainment: Game Development, and have commercial AAA
-        programming experience working as an Online Tools Designer at Rockstar
-        North.
+        programming experience working as an Online Tools Designer at <span className="font-bold">Rockstar
+        North</span>.
       </div>
       <div className="mb-4">
         As an independent contractor, I take a lot of joy in being able to
