@@ -14,7 +14,16 @@ const Skills = () => (
       <div className="flex flex-col">
         <div className="font-semibold uppercase">Engines/Frameworks</div>
         <div className="font-semibold">
-          <div>Unity</div>
+          <div>
+            <a
+              href="https://unity.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline"
+            >
+              Unity
+            </a>
+          </div>
           <div>Unreal</div>
           <div>MagicaVoxel</div>
         </div>
