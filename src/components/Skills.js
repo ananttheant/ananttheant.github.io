@@ -50,7 +50,8 @@ const Skills = () => (
         <div className="font-semibold uppercase">Tools</div>
         <div className="font-semibold">
           <div>Git & Github / GitLab / BitBucket </div>
-          <div>Trello / Asana / Slack</div>
+          <div>Trello / Asana</div>
+          <div> <a href="https://slack.com" target="_blank" rel="noreferrer" className="hover:underline">Slack</a> </div>
           <div> <a href="https://www.figma.com" target="_blank" rel="noreferrer" className="hover:underline">Figma</a> </div>
           <div> <a href="https://www.postman.com" target="_blank" rel="noreferrer" className="hover:underline">Postman</a> </div>
           <div> <a href="https://firebase.google.com" target="_blank" rel="noreferrer" className="hover:underline">Firebase</a> </div>
