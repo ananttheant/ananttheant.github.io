@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f410693.css",
-    "main.js": "/static/js/main.b546b3f2.js",
+    "main.css": "/static/css/main.984b3c3c.css",
+    "main.js": "/static/js/main.bb6c5cff.js",
     "static/js/787.d1d4a2c2.chunk.js": "/static/js/787.d1d4a2c2.chunk.js",
     "static/media/rspslots.png": "/static/media/rspslots.015531835afd32fbd525.png",
     "static/media/slots1.png": "/static/media/slots1.f27e36aa86af8b0780b6.png",
@@ -14,12 +14,12 @@
     "static/media/rsfun.webp": "/static/media/rsfun.692a068958c4136d82bb.webp",
     "static/media/icon-potion.gif": "/static/media/icon-potion.f2b9748bd1e58a54924b.gif",
     "index.html": "/index.html",
-    "main.2f410693.css.map": "/static/css/main.2f410693.css.map",
-    "main.b546b3f2.js.map": "/static/js/main.b546b3f2.js.map",
+    "main.984b3c3c.css.map": "/static/css/main.984b3c3c.css.map",
+    "main.bb6c5cff.js.map": "/static/js/main.bb6c5cff.js.map",
     "787.d1d4a2c2.chunk.js.map": "/static/js/787.d1d4a2c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f410693.css",
-    "static/js/main.b546b3f2.js"
+    "static/css/main.984b3c3c.css",
+    "static/js/main.bb6c5cff.js"
   ]
 }
