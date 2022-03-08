@@ -51,9 +51,9 @@ const Skills = () => (
         <div className="font-semibold">
           <div>Git & Github / GitLab / BitBucket </div>
           <div>Trello / Asana / Slack</div>
-          <div>Figma</div>
-          <div>Postman</div>
-          <div>Firebase </div>
+          <div> <a href="https://www.figma.com" target="_blank" rel="noreferrer" className="hover:underline">Figma</a> </div>
+          <div> <a href="https://www.postman.com" target="_blank" rel="noreferrer" className="hover:underline">Postman</a> </div>
+          <div> <a href="https://firebase.google.com" target="_blank" rel="noreferrer" className="hover:underline">Firebase</a> </div>
         </div>
       </div>
       <div className="flex flex-col">
