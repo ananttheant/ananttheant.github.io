@@ -24,7 +24,7 @@ const Description = ({ description }) => (
   </div>
 );
 
-const Image = ({ image, isInverted }) => {
+const Image = ({ image, isInverted, isUndisclosed }) => {
   let i = null;
   switch (image) {
     case "tiktik":
@@ -59,19 +59,26 @@ const Image = ({ image, isInverted }) => {
           !isInverted && "right-0"
         }`}
       >
-        <img
-          src={i}
-          alt={image}
-          className=" w-full h-full object-cover rounded"
-        />
+        <div className="w-full h-full relative">
+          <img
+            src={i}
+            alt={image}
+            className="w-full h-full object-cover rounded"
+          />
+          {isUndisclosed && (
+            <div className="flex items-center justify-center absolute w-full h-full top-0 left-0 text-9xl font-bold bg-black opacity-30">
+              <span>NDA</span>
+            </div>
+          )}
+        </div>
       </div>
-      <div className="absolute h-full w-full md:hidden bg-black opacity-30"></div>
     </>
   );
 };
 
 const WorkExperienceRow = ({
   image,
+  isUndisclosed,
   isInverted,
   product,
   company,
@@ -83,7 +90,11 @@ const WorkExperienceRow = ({
   return (
     <div className="my-32 max-w-[1024px] mx-auto p-4">
       <div className="relative h-96">
-        <Image image={image} isInverted={isInverted} />
+        <Image
+          image={image}
+          isInverted={isInverted}
+          isUndisclosed={isUndisclosed}
+        />
         <div
           className={`p-4 mt-4 flex flex-col ${
             isInverted ? "items-end text-right" : "items-start"

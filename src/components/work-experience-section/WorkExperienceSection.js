@@ -47,6 +47,7 @@ const rows = [
       `Used Raw-Axis Input and on screen click NavMesh Input together`,
     ],
     image: "bigbee2",
+    isUndisclosed: true,
     link: "",
   },
   {
@@ -61,6 +62,7 @@ const rows = [
       `Worked with NavMesh Agent`,
     ],
     image: "bigbee1",
+    isUndisclosed: true,
     link: "",
   },
   {
@@ -128,6 +130,7 @@ const WorkExperienceSection = () => {
           image={row.image}
           link={row.link}
           key={index}
+          isUndisclosed={row.isUndisclosed}
         />
       ))}
     </div>
