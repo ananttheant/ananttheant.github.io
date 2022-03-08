@@ -35,7 +35,7 @@ const rows = [
   },
   {
     company: `Big Bee Studios`,
-    product: `*UNDISCLOSED* MOBA Title`,
+    product: ``,
     role: "Gameplay Programmer (Unity 3D)",
     description: [
       `Worked independently on gameplay mechanics`,
@@ -52,7 +52,7 @@ const rows = [
   },
   {
     company: `Big Bee Studios`,
-    product: `*UNDISCLOSED* Title`,
+    product: ``,
     role: "Machine Learning Engineer (Unity 3D)",
     description: [
       `Worked on a 2D top down zombie survival game like Braains.io`,
