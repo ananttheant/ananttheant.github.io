@@ -86,6 +86,7 @@ const WorkExperienceRow = ({
   tools,
   role,
   link,
+  timeline,
 }) => {
   return (
     <div className="my-32 max-w-[1024px] mx-auto p-4">
@@ -106,8 +107,11 @@ const WorkExperienceRow = ({
           <div className="bg-white shadow-lg mb-1 px-2 rounded text-2xl font-semibold">
             {product}
           </div>
-          <div className="bg-white shadow-lg mb-4 px-2 rounded mb-8 text-blue-500">
+          <div className="bg-white shadow-lg mb-4 px-2 rounded mb-2 text-blue-500">
             {role}
+          </div>
+          <div className="bg-white shadow-lg mb-4 px-2 rounded mb-8 text-xs">
+            {timeline}
           </div>
           <Description description={description} />
           <div className="">{tools}</div>

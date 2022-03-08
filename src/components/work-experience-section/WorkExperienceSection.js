@@ -6,6 +6,7 @@ const rows = [
     company: `Titik Pintar`,
     product: `Titik Pintar`,
     role: "Game Developer",
+    timeline: "Aug 2020 - Present · 1 yr 8 mos",
     description: [
       `Got Selected for "IMPACT COLLECTIVE" supported by UNDP (United Nations Development Programme)`,
       `Performed optimization on a pre-existing codebase, and reduced draw calls by half and application size by 55%`,
@@ -24,6 +25,7 @@ const rows = [
     company: `Webzool Creative`,
     product: `RSFUN`,
     role: "Game Developer (Remote)",
+    timeline: "Feb 2020 - Aug 2020 · 7 mos",
     description: [
       `Worked on multiple Slot games, with unique functionalities`,
       `Made Editor tools for Developers to automate certain repetitive tasks`,
@@ -37,6 +39,7 @@ const rows = [
     company: `Big Bee Studios`,
     product: ``,
     role: "Gameplay Programmer (Unity 3D)",
+    timeline: "Oct 2019 - Feb 2020 · 5 mos",
     description: [
       `Worked independently on gameplay mechanics`,
       `Worked with Photon PUN-2 Multiplayer`,
@@ -54,6 +57,7 @@ const rows = [
     company: `Big Bee Studios`,
     product: ``,
     role: "Machine Learning Engineer (Unity 3D)",
+    timeline: "Aug 2019 - Sep 2019 · 2 mos",
     description: [
       `Worked on a 2D top down zombie survival game like Braains.io`,
       `Used machine learning brain in unity for artificial intelligence`,
@@ -69,6 +73,7 @@ const rows = [
     company: `Big Bee Studios`,
     product: `RSP Slots`,
     role: "Game Developer",
+    timeline: "Jun 2019 - Jul 2019 · 2 mos",
     description: [
       `Helped in changing the code architecture of the game`,
       `Used Knowledge of editor scripting to ease the workflow`,
@@ -82,6 +87,7 @@ const rows = [
     role: "UI Programmer (Unity 2D)",
     product: "Monster Pop",
     image: "hm",
+    timeline: "Full-time · 1 yr 1 mo",
     description: [
       <span>
         Got Nominated for{" "}
@@ -102,6 +108,7 @@ const rows = [
     role: "UI Programmer (Unity 2D)",
     product: `Slots - Blue Diamond`,
     image: "slots",
+    timeline: "May 2018 - Jan 2019 · 9 mos",
     description: [
       `Worked with Programming Design Patterns. (eg Singleton, Observer, Factory)`,
       `Worked with Unity UI`,
@@ -131,6 +138,7 @@ const WorkExperienceSection = () => {
           link={row.link}
           key={index}
           isUndisclosed={row.isUndisclosed}
+          timeline={row.timeline}
         />
       ))}
     </div>
