@@ -15,12 +15,12 @@ const Hero = () => (
           living!
         </div>
         <div className="text-2xl font-light">
-          Got an interesting project? Send me a message at{" "}
+          Got an interesting project? Send me a message {" "}
           <a
             href="mailto:ananttheant4444@gmail.com"
             className="underline underline-offset-1 decoration-blue-500"
           >
-            @ gmail
+            @ email
           </a>
           .
         </div>
