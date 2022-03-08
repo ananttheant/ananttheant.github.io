@@ -1,10 +1,10 @@
-import tiktik from "./tiktik.jpg";
+import tiktik from "./tiktik1.jpg";
 import rsfun from "./rsfun.webp";
 import rspslots from "./rspslots.png";
 import bigbee1 from "./bigbee1.png";
 import bigbee2 from "./bigbee2.png";
-import hm from "./hm.png";
-import slots from "./slots.jpg";
+import hm from "./hm.jpg";
+import slots from "./slots1.png";
 import React from "react";
 
 // const truncateIfTooLong = (string, length) => {
@@ -78,47 +78,47 @@ const WorkExperienceRow = ({
   description,
   tools,
   role,
+  link,
 }) => {
   return (
     <div className="my-32 max-w-[1024px] mx-auto p-4">
-      {!isInverted && (
-        <div className="relative h-96">
-          <Image image={image} isInverted={isInverted} />
-          <div className="p-4 mt-4 flex flex-col items-start justify-center relative h-full z-10 my-auto">
-            <div className="bg-white shadow-lg mb-1 px-2 rounded font-light tracking-wider">
-              {company}
-            </div>
-            <div className="bg-white shadow-lg mb-1 px-2 rounded text-2xl font-semibold">
-              {product}
-            </div>
-            <div className="bg-white shadow-lg mb-4 px-2 rounded mb-8 text-blue-500">
-              {role}
-            </div>
-            <Description description={description} />
-            <div>{tools}</div>
+      <div className="relative h-96">
+        <Image image={image} isInverted={isInverted} />
+        <div
+          className={`p-4 mt-4 flex flex-col ${
+            isInverted ? "items-end text-right" : "items-start"
+          } justify-center relative h-full z-10 my-auto`}
+        >
+          <div className="bg-white shadow-lg mb-1 px-2 rounded font-light tracking-wider">
+            {company}
+          </div>
+          <div className="bg-white shadow-lg mb-1 px-2 rounded text-2xl font-semibold">
+            {product}
+          </div>
+          <div className="bg-white shadow-lg mb-4 px-2 rounded mb-8 text-blue-500">
+            {role}
+          </div>
+          <Description description={description} />
+          <div className="">{tools}</div>
+          <div className="m-4">
+            {link && (
+              <div className="h-6 w-6 rounded shadow-lg bg-white">
+                <a href={link} target="_blank" rel="noreferrer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                  </svg>
+                </a>
+              </div>
+            )}
           </div>
         </div>
-      )}
-      {isInverted && (
-        <div className="relative h-96">
-          <Image image={image} isInverted={isInverted} />
-          <div
-            className={`p-4 mt-4 flex flex-col items-end justify-center relative h-full z-10 my-auto text-right`}
-          >
-            <div className="bg-white shadow-lg mb-1 px-2 rounded font-light tracking-wider">
-              {company}
-            </div>
-            <div className="bg-white shadow-lg mb-1 px-2 rounded text-2xl font-semibold">
-              {product}
-            </div>
-            <div className="bg-white shadow-lg mb-4 px-2 rounded mb-8 text-blue-500">
-              {role}
-            </div>
-            <Description description={description} />
-            <div>{tools}</div>
-          </div>
-        </div>
-      )}
+      </div>
     </div>
   );
 };

@@ -9,11 +9,10 @@ const Hero = () => (
       </div>
       <div>
         <div className="text-4xl font-light mb-8">
-          I'm <span className="font-bold">Anant Sharma</span>, a passionate{" "}
-          <br />
-          professional gameplay and tools <br /> engineer who loves to design
-          and
-          <br /> develop game-focused applications.
+          I'm <span className="font-bold">Anant Sharma</span>, a{" "}
+          <span className="font-semibold">game developer</span> <br /> that's on
+          a pursuit to feed it's curiosity. <br /> I love to make games for a
+          living!
         </div>
         <div className="text-2xl font-light">
           Got an interesting project? Send me a message at{" "}

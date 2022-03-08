@@ -1,14 +1,41 @@
 import React from "react";
 import linkedin from "./linkedin.png";
+import git from "./git.png";
 
 const Footer = () => {
   return (
     <div className="text-center w-full mt-32 mb-16">
       <div className="text-xs">
-        Developed by Anant Sharma | 2018 <br /> Inspired by Joeb Rogers
+        Developed by{" "}
+        <a
+          href="https://github.com/ananttheant"
+          target="_blank"
+          rel="noreferrer"
+          className="underline"
+        >
+          Anant Sharma
+        </a>{" "}
+        &{" "}
+        <a
+          href="https://github.com/akshay-nm"
+          target="_blank"
+          rel="noreferrer"
+          className="underline"
+        >
+          Akshay Kumar
+        </a>{" "}
+        | 2018 <br /> Inspired by Joeb Rogers
       </div>
       <div className="flex items-center uppercase font-semibold p-4 w-full justify-center">
-        <a href="mailto:ananttheant4444@gmail.com" className="mr-4">
+        <a
+          href="https://github.com/ananttheant"
+          className="mr-4"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={git} className="h-5 w-5" alt="Link to github profile" />
+        </a>
+        <a href="mailto:ananttheant4444@gmail.com" className="mr-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"

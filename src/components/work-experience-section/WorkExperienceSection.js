@@ -126,6 +126,7 @@ const WorkExperienceSection = () => {
           isInverted={index % 2 !== 0}
           role={row.role}
           image={row.image}
+          link={row.link}
           key={index}
         />
       ))}

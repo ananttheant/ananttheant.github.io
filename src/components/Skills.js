@@ -6,20 +6,17 @@ const Skills = () => (
       <div className="flex flex-col">
         <div className="font-semibold uppercase">Languages</div>
         <div className="font-light">
+          <div>C</div>
           <div>C++</div>
           <div>C#</div>
-          <div>Lua</div>
-          <div>JavaScript (ES6)</div>
-          <div>HTML5</div>
-          <div>CSS3/Sass</div>
         </div>
       </div>
       <div className="flex flex-col">
         <div className="font-semibold uppercase">Engines/Frameworks</div>
         <div className="font-semibold">
           <div>Unity</div>
-          <div>Unreal 4</div>
-          <div>WebSockets</div>
+          <div>Unreal</div>
+          <div>MagicaVoxel</div>
         </div>
       </div>
       <div className="flex flex-col">
@@ -29,6 +26,7 @@ const Skills = () => (
           <div>Trello / Asana / Slack</div>
           <div>Figma</div>
           <div>Postman</div>
+          <div>Firebase </div>
         </div>
       </div>
       <div className="flex flex-col">
@@ -39,6 +37,7 @@ const Skills = () => (
           <div>User Interface</div>
           <div>Multiplayer</div>
           <div>Animation</div>
+          <div>Analytics </div>
         </div>
       </div>
     </div>
