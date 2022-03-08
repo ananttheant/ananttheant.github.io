@@ -8,11 +8,12 @@ const rows = [
     role: "Game Developer",
     timeline: "Aug 2020 - Present · 1 yr 8 mos",
     description: [
-      `<span>Got Selected for{" "}
-        <span className="text-yellow-600 font-semibold tracking-wider">
-          "IMPACT COLLECTIVE"
-        </span>{" "}
-        supported by UNDP (United Nations Development Programme)`
+      <span>
+        Got Selected for{" "}
+          <span className="text-yellow-600 font-semibold tracking-wider">
+            "IMPACT COLLECTIVE"
+          </span>{" "}
+        supported by UNDP (United Nations Development Programme)
       </span>,
       `Performed optimization on a pre-existing codebase, and reduced draw calls by half and application size by 55%`,
       `Implemented Automatic Push Notification using OneSignal SDK and Firebase SDK`,
