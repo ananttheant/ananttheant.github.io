@@ -20,7 +20,7 @@ const Hero = () => (
             href="mailto:ananttheant4444@gmail.com"
             className="underline underline-offset-1 decoration-blue-500"
           >
-            via email
+            @ gmail
           </a>
           .
         </div>
