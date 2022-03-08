@@ -24,9 +24,27 @@ const Skills = () => (
               Unity
             </a>
           </div>
-          <div>Unreal</div>
-          <div>MagicaVoxel</div>
-        </div>
+          <div>
+            <a
+              href="https://www.unrealengine.com"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline"
+            >
+              Unreal
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://ephtracy.github.io/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline"
+            >
+              MagicaVoxel
+            </a>
+        </div>  
+      </div>        
       </div>
       <div className="flex flex-col">
         <div className="font-semibold uppercase">Tools</div>
