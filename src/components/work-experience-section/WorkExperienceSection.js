@@ -3,16 +3,26 @@ import WorkExperienceRow from "./WorkExperienceRow";
 
 const rows = [
   {
+    company: `Miniclip`,
+    product: ``,
+    role: "Software Developer II",
+    timeline: "Sept 2022 - Present · recent",
+    // description: [],
+    image: "miniclip",
+    link: "https://miniclip.com",
+    imageClassName: "object-scale-down",
+  },
+  {
     company: `Titik Pintar`,
     product: `Titik Pintar`,
     role: "Game Developer",
-    timeline: "Aug 2020 - Present · 1 yr 8 mos",
+    timeline: "Aug 2020 - July 2022 · 2 yrs",
     description: [
       <span>
         Got Selected for{" "}
-          <span className="text-yellow-600 font-semibold tracking-wider">
-            "IMPACT COLLECTIVE"
-          </span>{" "}
+        <span className="text-yellow-600 font-semibold tracking-wider">
+          "IMPACT COLLECTIVE"
+        </span>{" "}
         supported by UNDP (United Nations Development Programme)
       </span>,
       `Performed optimization on a pre-existing codebase, and reduced draw calls by half and application size by 55%`,
@@ -145,6 +155,7 @@ const WorkExperienceSection = () => {
           key={index}
           isUndisclosed={row.isUndisclosed}
           timeline={row.timeline}
+          imageClassName={row.imageClassName ?? ""}
         />
       ))}
     </div>

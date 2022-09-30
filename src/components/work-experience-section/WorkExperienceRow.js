@@ -1,3 +1,5 @@
+import React from "react";
+
 import tiktik from "./tiktik1.jpg";
 import rsfun from "./rsfun.webp";
 import rspslots from "./rspslots.png";
@@ -5,15 +7,14 @@ import bigbee1 from "./bigbee1.png";
 import bigbee2 from "./bigbee2.png";
 import hm from "./hm.jpg";
 import slots from "./slots1.png";
-import React from "react";
-
+import miniclip from "./miniclip.jpeg";
 // const truncateIfTooLong = (string, length) => {
 //   if (string.length < length) return string;
 //   return string.substring(0, length - 3) + "...";
 // };
 
 const Description = ({ description }) => (
-  <div className="bg-gray-50 max-w-sm overflow-auto rounded py-4 overflow-hidden shadow-lg">
+  <div className="bg-gray-50 max-w-sm rounded py-4 overflow-hidden shadow-lg">
     <ul className="text-sm max-h-36 px-4 overflow-auto">
       {description.map((d, index) => (
         <li className="mb-1" key={index}>
@@ -24,7 +25,7 @@ const Description = ({ description }) => (
   </div>
 );
 
-const Image = ({ image, isInverted, isUndisclosed }) => {
+const Image = ({ image, isInverted, isUndisclosed, className = "" }) => {
   let i = null;
   switch (image) {
     case "tiktik":
@@ -48,6 +49,9 @@ const Image = ({ image, isInverted, isUndisclosed }) => {
     case "hm":
       i = hm;
       break;
+    case "miniclip":
+      i = miniclip;
+      break;
     default:
       return null;
   }
@@ -63,7 +67,7 @@ const Image = ({ image, isInverted, isUndisclosed }) => {
           <img
             src={i}
             alt={image}
-            className="w-full h-full object-cover rounded"
+            className={`w-full h-full object-cover rounded ${className}`}
           />
           {isUndisclosed && (
             <div className="flex items-center justify-center absolute w-full h-full top-0 left-0 text-9xl font-bold bg-black opacity-30">
@@ -87,6 +91,7 @@ const WorkExperienceRow = ({
   role,
   link,
   timeline,
+  imageClassName = "",
 }) => {
   return (
     <div className="my-32 max-w-[1024px] mx-auto p-4">
@@ -95,6 +100,7 @@ const WorkExperienceRow = ({
           image={image}
           isInverted={isInverted}
           isUndisclosed={isUndisclosed}
+          className={imageClassName}
         />
         <div
           className={`p-4 mt-4 flex flex-col ${
@@ -107,13 +113,13 @@ const WorkExperienceRow = ({
           <div className="bg-white shadow-lg mb-1 px-2 rounded text-2xl font-semibold">
             {product}
           </div>
-          <div className="bg-white shadow-lg mb-4 px-2 rounded mb-2 text-blue-500">
+          <div className="bg-white shadow-lg px-2 rounded mb-2 text-blue-500">
             {role}
           </div>
-          <div className="bg-white shadow-lg mb-4 px-2 rounded mb-8 text-xs">
+          <div className="bg-white shadow-lg px-2 rounded mb-8 text-xs">
             {timeline}
           </div>
-          <Description description={description} />
+          {description && <Description description={description} />}
           <div className="">{tools}</div>
           <div className="m-4">
             {link && (
