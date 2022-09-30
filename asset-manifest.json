@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.239965ba.css",
-    "main.js": "/static/js/main.9a44bcc1.js",
+    "main.css": "/static/css/main.2fa38b6d.css",
+    "main.js": "/static/js/main.803970f7.js",
     "static/js/787.d1d4a2c2.chunk.js": "/static/js/787.d1d4a2c2.chunk.js",
     "static/media/rspslots.png": "/static/media/rspslots.015531835afd32fbd525.png",
     "static/media/slots1.png": "/static/media/slots1.f27e36aa86af8b0780b6.png",
@@ -11,15 +11,16 @@
     "static/media/tiktik1.jpg": "/static/media/tiktik1.732a5097d6456c233cfa.jpg",
     "static/media/hm.jpg": "/static/media/hm.9c1ac80e2c0448bea6fe.jpg",
     "static/media/ant.png": "/static/media/ant.b4de2fd1e35864d2bc41.png",
+    "static/media/miniclip.jpeg": "/static/media/miniclip.cd144e98e42376cac9d5.jpeg",
     "static/media/rsfun.webp": "/static/media/rsfun.692a068958c4136d82bb.webp",
     "static/media/icon-potion.gif": "/static/media/icon-potion.f2b9748bd1e58a54924b.gif",
     "index.html": "/index.html",
-    "main.239965ba.css.map": "/static/css/main.239965ba.css.map",
-    "main.9a44bcc1.js.map": "/static/js/main.9a44bcc1.js.map",
+    "main.2fa38b6d.css.map": "/static/css/main.2fa38b6d.css.map",
+    "main.803970f7.js.map": "/static/js/main.803970f7.js.map",
     "787.d1d4a2c2.chunk.js.map": "/static/js/787.d1d4a2c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.239965ba.css",
-    "static/js/main.9a44bcc1.js"
+    "static/css/main.2fa38b6d.css",
+    "static/js/main.803970f7.js"
   ]
 }
