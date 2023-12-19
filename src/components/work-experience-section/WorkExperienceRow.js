@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import tiktik from "./tiktik1.jpg";
 import rsfun from "./rsfun.webp";
@@ -8,21 +8,29 @@ import bigbee2 from "./bigbee2.png";
 import hm from "./hm.jpg";
 import slots from "./slots1.png";
 import miniclip from "./miniclip.jpeg";
+import { classNames } from "../../utils";
 // const truncateIfTooLong = (string, length) => {
 //   if (string.length < length) return string;
 //   return string.substring(0, length - 3) + "...";
 // };
 
-const Description = ({ description }) => (
-  <div className="bg-gray-50 max-w-sm rounded py-4 overflow-hidden shadow-lg">
-    <ul className="text-sm max-h-36 px-4 overflow-auto">
-      {description.map((d, index) => (
-        <li className="mb-1" key={index}>
-          {d}
-        </li>
-      ))}
-    </ul>
-  </div>
+const Responsibilties = ({ responsibilities }) => (
+  <>
+    {responsibilities.map((r, index) => (
+      <li className="mb-1" key={index}>
+        {r}
+      </li>
+    ))}
+  </>
+);
+const NoteworthyWorks = ({ noteworthy }) => (
+  <>
+    {noteworthy.map((nw, index) => (
+      <li className="mb-1" key={index}>
+        {nw}
+      </li>
+    ))}
+  </>
 );
 
 const Image = ({ image, isInverted, isUndisclosed, className = "" }) => {
@@ -86,13 +94,23 @@ const WorkExperienceRow = ({
   isInverted,
   product,
   company,
-  description,
+  responsibilities,
+  noteworthy,
   tools,
   role,
   link,
   timeline,
   imageClassName = "",
 }) => {
+  const [currentTab, setCurrentTab] = useState("responsibilities");
+
+  useEffect(() => {
+    if (noteworthy.length > 0 && responsibilities.length === 0)
+      setCurrentTab("noteworthy-works");
+    if (responsibilities.length > 0 && noteworthy.length === 0)
+      setCurrentTab("responsibilities");
+  }, [noteworthy, responsibilities]);
+
   return (
     <div className="my-32 max-w-[1024px] mx-auto p-4">
       <div className="relative h-96">
@@ -119,7 +137,41 @@ const WorkExperienceRow = ({
           <div className="bg-white shadow-lg px-2 rounded mb-8 text-xs">
             {timeline}
           </div>
-          {description && <Description description={description} />}
+          <div className="bg-gray-50 max-w-sm max-h-64 rounded flex flex-col overflow-hidden shadow-lg">
+            <div className="flex items-center gap-x-3 mt-2 ml-2">
+              {responsibilities.length > 0 && (
+                <button
+                  className={classNames(
+                    "rounded-lg px-2 py-1 bg-white hover:bg-gray-100 shadow-sm",
+                    currentTab === "responsibilities" && "!bg-gray-200"
+                  )}
+                  onClick={() => setCurrentTab("responsibilities")}
+                >
+                  Responsibilties
+                </button>
+              )}
+              {noteworthy.length > 0 && (
+                <button
+                  className={classNames(
+                    "rounded-lg px-2 py-1 bg-white hover:bg-gray-100 shadow-sm",
+                    currentTab === "noteworthy-works" && "!bg-gray-200"
+                  )}
+                  onClick={() => setCurrentTab("noteworthy-works")}
+                >
+                  Noteworthy works
+                </button>
+              )}
+            </div>
+
+            <ul className="flex-grow text-sm p-4 overflow-auto mt-2">
+              {currentTab === "responsibilities" && (
+                <Responsibilties responsibilities={responsibilities} />
+              )}
+              {currentTab === "noteworthy-works" && (
+                <NoteworthyWorks noteworthy={noteworthy} />
+              )}
+            </ul>
+          </div>
           <div className="">{tools}</div>
           <div className="m-4">
             {link && (

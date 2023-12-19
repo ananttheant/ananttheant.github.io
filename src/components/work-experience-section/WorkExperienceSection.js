@@ -7,8 +7,12 @@ const rows = [
     product: ``,
     role: "Software Developer II",
     timeline: "Sept 2022 - Present · recent",
-    description: [
-    `Responsibilities:`,
+    noteworthy: [
+      `Maintain and improve in-house Unity packages such as (but not limited to) networking, Automation, Chat, Addressable etc`,
+      `Create solutions for the client team which can be reused`,
+      `Maintain Jenkins pipeline for client devs`,
+    ],
+    responsibilities: [
       `Support client teams`,
       `Maintain and improve in-house Unity packages such as (but not limited to) networking, Automation, Chat, Addressable etc`,
       `Create solutions for the client team which can be reused`,
@@ -23,7 +27,8 @@ const rows = [
     product: `Titik Pintar`,
     role: "Game Developer",
     timeline: "Aug 2020 - July 2022 · 2 yrs",
-    description: [
+    noteworthy: [],
+    responsibilities: [
       <span>
         Got Selected for{" "}
         <span className="text-yellow-600 font-semibold tracking-wider">
@@ -48,7 +53,8 @@ const rows = [
     product: `RSFUN`,
     role: "Game Developer (Remote)",
     timeline: "Feb 2020 - Aug 2020 · 7 mos",
-    description: [
+    noteworthy: [],
+    responsibilities: [
       `Worked on multiple Slot games, with unique functionalities`,
       `Made Editor tools for Developers to automate certain repetitive tasks`,
       `Handled all the sounds in a data-driven manner`,
@@ -62,7 +68,8 @@ const rows = [
     product: ``,
     role: "Gameplay Programmer (Unity 3D)",
     timeline: "Oct 2019 - Feb 2020 · 5 mos",
-    description: [
+    noteworthy: [],
+    responsibilities: [
       `Worked independently on gameplay mechanics`,
       `Worked with Photon PUN-2 Multiplayer`,
       `Made a generic character controller for heroes in the game`,
@@ -80,7 +87,8 @@ const rows = [
     product: ``,
     role: "Machine Learning Engineer (Unity 3D)",
     timeline: "Aug 2019 - Sep 2019 · 2 mos",
-    description: [
+    noteworthy: [],
+    responsibilities: [
       `Worked on a 2D top down zombie survival game like Braains.io`,
       `Used machine learning brain in unity for artificial intelligence`,
       `Created a genetic algorithm.`,
@@ -96,7 +104,8 @@ const rows = [
     product: `RSP Slots`,
     role: "Game Developer",
     timeline: "Jun 2019 - Jul 2019 · 2 mos",
-    description: [
+    noteworthy: [],
+    responsibilities: [
       `Helped in changing the code architecture of the game`,
       `Used Knowledge of editor scripting to ease the workflow`,
       `Optimized and documented pre-existing code`,
@@ -110,7 +119,8 @@ const rows = [
     product: "Monster Pop",
     image: "hm",
     timeline: "Full-time · 1 yr 1 mo",
-    description: [
+    noteworthy: [],
+    responsibilities: [
       <span>
         Got Nominated for{" "}
         <span className="text-yellow-600 font-semibold tracking-wider">
@@ -131,7 +141,8 @@ const rows = [
     product: `Slots - Blue Diamond`,
     image: "slots",
     timeline: "May 2018 - Jan 2019 · 9 mos",
-    description: [
+    noteworthy: [],
+    responsibilities: [
       `Worked with Programming Design Patterns. (eg Singleton, Observer, Factory)`,
       `Worked with Unity UI`,
       `Integration of Sound Effects in game`,
@@ -153,7 +164,8 @@ const WorkExperienceSection = () => {
         <WorkExperienceRow
           company={row.company}
           product={row.product}
-          description={row.description}
+          noteworthy={row.noteworthy}
+          responsibilities={row.responsibilities}
           isInverted={index % 2 !== 0}
           role={row.role}
           image={row.image}
