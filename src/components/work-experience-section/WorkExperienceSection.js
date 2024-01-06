@@ -8,9 +8,10 @@ const rows = [
     role: "Software Developer II",
     timeline: "Sept 2022 - Present · recent",
     noteworthy: [
-      `Maintain and improve in-house Unity packages such as (but not limited to) networking, Automation, Chat, Addressable etc`,
-      `Create solutions for the client team which can be reused`,
-      `Maintain Jenkins pipeline for client devs`,
+      `UI graphic support for Unity Anima2D skeleton animation.`,
+      `Custom Android native plugins to support the needs of the client developers.`,
+      `Custom Emoji system.`,
+      `Extending 3rd party SDKs by adding a custom wrapper around it.`,
     ],
     responsibilities: [
       `Support client teams`,
