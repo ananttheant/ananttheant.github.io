@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b82d74df.css",
-    "main.js": "/static/js/main.c4ae8886.js",
+    "main.js": "/static/js/main.ac6b2514.js",
     "static/js/787.d1d4a2c2.chunk.js": "/static/js/787.d1d4a2c2.chunk.js",
     "static/media/rspslots.png": "/static/media/rspslots.015531835afd32fbd525.png",
     "static/media/slots1.png": "/static/media/slots1.f27e36aa86af8b0780b6.png",
@@ -16,11 +16,11 @@
     "static/media/icon-potion.gif": "/static/media/icon-potion.f2b9748bd1e58a54924b.gif",
     "index.html": "/index.html",
     "main.b82d74df.css.map": "/static/css/main.b82d74df.css.map",
-    "main.c4ae8886.js.map": "/static/js/main.c4ae8886.js.map",
+    "main.ac6b2514.js.map": "/static/js/main.ac6b2514.js.map",
     "787.d1d4a2c2.chunk.js.map": "/static/js/787.d1d4a2c2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b82d74df.css",
-    "static/js/main.c4ae8886.js"
+    "static/js/main.ac6b2514.js"
   ]
 }
