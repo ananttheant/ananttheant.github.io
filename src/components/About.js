@@ -4,7 +4,7 @@ const About = () => (
   <Section heading="background" icon="potion">
     <div className="font-light">
       <div className="mb-4">        
-        I'm a <span className="font-bold">game developer</span>, currently based in <span className="font-bold">New Delhi, India</span>.
+        I'm a <span className="font-bold">game developer</span>, currently based in <span className="font-bold">Lisbon, Portugal</span>.
         I've worked with many studios on different aspects of game development with people from various backgrounds both cultural and professional.
       </div>
       <div className="mb-4">
