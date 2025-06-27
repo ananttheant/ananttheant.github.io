@@ -5,7 +5,7 @@ const rows = [
   {
     company: `Miniclip`,
     product: ``,
-    role: "Software Developer II",
+    role: "Sr. Software Developer I",
     timeline: "Sept 2022 - Present · recent",
     noteworthy: [
       `UI graphic support for Unity Anima2D skeleton animation.`,
